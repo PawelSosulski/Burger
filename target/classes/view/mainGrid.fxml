@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="618.0" maxWidth="500.0" minHeight="600.0" minWidth="500.0" prefHeight="618.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainGridController">
+   <children>
+      <GridPane fx:id="grid" layoutY="92.0" prefHeight="500.0" prefWidth="500.0" style="-fx-border-width: 4; -fx-border-color: #AAAA; -fx-grid-lines-visible: true;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="284.0" text="RUNNING  BURGER OM OM">
+         <font>
+            <Font name="Curlz MT" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeField" editable="false" focusTraversable="false" layoutX="238.0" layoutY="61.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="counterField" editable="false" focusTraversable="false" layoutX="337.0" layoutY="60.0" prefHeight="25.0" prefWidth="43.0" />
+      <TextField fx:id="recordField" editable="false" focusTraversable="false" layoutX="408.0" layoutY="60.0" prefHeight="25.0" prefWidth="60.0" />
+      <Label layoutX="164.0" layoutY="65.0" text="current time:" />
+      <Label layoutX="337.0" layoutY="37.0" text="left:" />
+      <Label layoutX="408.0" layoutY="37.0" text="record:" />
+      <Accordion />
+      <Button fx:id="newGameButton" disable="true" layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleNewGame" text="New game" />
+      <Label layoutX="323.0" layoutY="596.0" text="created by Paweł Sosulski 2019" />
+   </children>
+</AnchorPane>

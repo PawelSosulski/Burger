@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kulki:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/kulki_jar</output-path>
+    <root id="archive" name="kulki.jar">
+      <element id="module-output" name="burger" />
+    </root>
+  </artifact>
+</component>
